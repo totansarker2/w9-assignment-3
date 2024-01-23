@@ -503,34 +503,34 @@
 
     <!-- get in touch section -->
     <section class="section w-sm mx-auto flex flex-col items-center margin-top gap-6 text-center">
-        <h1 class=" h1 h1-lg">Our New Products</h1>
+        <h1 class=" h1 h1-lg">Get In Touch</h1>
         <p class="p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
             sit
             nullam proin.
         </p>
 
         <div class="info w-full sm:grid grid-cols-12 gap-8 text-left">
-            <div class="contact col-span-5 grid gap-4 p-12 border radius-lg">
-                <div class="flex flex-col justify-center gap-2 bg-[#BCED6D1A] radius-sm p-8">
-                    <img class="w-max" src="./assets/icons/phone.png" alt="">
+            <div class="contact col-span-5 grid gap-4 p-[3vw] border radius-lg">
+                <div class="flex flex-col justify-center gap-2 bg-[#BCED6D1A] radius-sm p-[2vw]">
+                    <img class="w-fit" src="./assets/icons/phone.png" alt="">
                     <span class="p">Phone Number</span>
                     <span class="text-lg font-extrabold">(+62) 123-321-543</span>
                 </div>
-                <div class="w-full flex flex-col justify-center gap-4  bg-[#FDDD5F1A] radius-sm p-8">
-                    <img class="w-max" src="./assets/icons/mail.png" alt="">
+                <div class="w-full flex flex-col justify-center gap-4  bg-[#FDDD5F1A] radius-sm p-[2vw]">
+                    <img class="w-fit" src="./assets/icons/mail.png" alt="">
                     <span class="p">Email</span>
                     <span class="text-lg font-extrabold">hockeys@support.com</span>
                 </div>
-                <div class="w-full flex flex-col justify-center gap-4 bg-[#629CF31A] radius-sm p-8">
-                    <img class="w-max" src="./assets/icons/location.png" alt="">
+                <div class="w-full flex flex-col justify-center gap-4 bg-[#629CF31A] radius-sm p-[2vw]">
+                    <img class="w-fit" src="./assets/icons/location.png" alt="">
                     <span class="p">Location</span>
                     <span class="text-lg font-extrabold">152/1 Mohakhali Wireless Gate</span>
                 </div>
             </div>
 
-            <form class="col-span-7">
-                <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 text-left">
-                    <div class="sm:col-span-3">
+            <form class="col-span-7 flex flex-col">
+                <div class="grid grid-cols-1 sm:grid-cols-6 gap-x-6 gap-y-8  text-left">
+                    <div class="sm:col-span-3 border h-fit">
                         <label for="name" class="block text-sm font-medium leading-6 text-gray-900">First
                             name</label>
                         <div class="mt-2">
@@ -540,7 +540,7 @@
                         </div>
                     </div>
 
-                    <div class="sm:col-span-3">
+                    <div class="sm:col-span-3 border h-fit">
                         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Last
                             name</label>
                         <div class="mt-2">
@@ -550,7 +550,7 @@
                         </div>
                     </div>
 
-                    <div class="sm:col-span-3">
+                    <div class="sm:col-span-3 border h-fit">
                         <label for="subject" class="block text-sm font-medium leading-6 text-gray-900">Email
                             address</label>
                         <div class="mt-2">
@@ -560,7 +560,7 @@
                         </div>
                     </div>
 
-                    <div class="sm:col-span-3">
+                    <div class="sm:col-span-3 border h-fit">
                         <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">Email
                             address</label>
                         <div class="mt-2">
@@ -569,15 +569,24 @@
                                 class="block w-full rounded-md border-0 py-4 pl-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder: ,text-gray-400 focus:ring-2 focus:ring-inset outline-none text-sm">
                         </div>
                     </div>
-
+                </div>
+                <div class="border flex-grow flex flex-col">
+                    <label for="text-area" class="block text-sm font-medium leading-6 text-gray-900">Email
+                        address</label>
+                    <div class="mt-2 h-full">
+                        <textarea id="text-area" name="message" type="text" autocomplete="message"
+                            placeholder="Write your message"
+                            class="resize-none block w-full h-full rounded-md border-0 py-4  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder: ,text-gray-400 focus:ring-2 focus:ring-inset outline-none text-sm">
+                        </textarea>
+                    </div>
+                    <div class="mt-6 flex items-center justify-end gap-x-6">
+                        <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                        <button type="submit"
+                            class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+                    </div>
                 </div>
 
 
-                <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-                    <button type="submit"
-                        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
-                </div>
             </form>
         </div>
     </section>
