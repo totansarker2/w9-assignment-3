@@ -17,10 +17,16 @@
     <style>
         body {
             font-family: 'Manrope', sans-serif;
+            color: #131318;
         }
 
         .h1 {
-            font-size: 36px;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .h1 {
+            font-size: 22px;
             font-weight: 800;
         }
 
@@ -36,7 +42,7 @@
 
         .h4 {
             font-size: 20px;
-            font-weight: 800;
+            font-weight: 600;
         }
 
         .h5 {
@@ -45,7 +51,8 @@
         }
 
         .p {
-            font-size: 16px;
+            color: rgba(19, 19, 24, 0.60);
+            font-size: 14px;
             font-weight: 500;
             line-height: 26px;
         }
@@ -62,18 +69,70 @@
             color: #131318;
         }
 
-        .text-.dark-2 {
+        .text-dark-2 {
             color: #424247;
         }
 
-        .text-.dark-3 {
+        .text-dark-3 {
             color: rgba(19, 19, 24, 0.50);
+        }
+
+        .margin-top {
+            margin-top: 6vw;
+        }
+
+        /* .w-lg {
+            width: 100%;
+        } */
+
+        .w-sm {
+            width: 90%;
+        }
+
+        @media screen and (min-width: 641px) {
+
+            .nav,
+            .section {
+                width: 80%;
+            }
+
+            .h1-lg {
+                font-size: 36px;
+                font-weight: 800;
+            }
+
+            .h2-lg {
+                font-size: 28px;
+                font-weight: 800;
+            }
+
+            .h3-lg {
+                font-size: 24px;
+                font-weight: 800;
+            }
+
+            .h4-lg {
+                font-size: 20px;
+                font-weight: 800;
+            }
+
+            .h5-lg {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .p {
+                color: rgba(19, 19, 24, 0.60);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <nav class="w-[80%] mx-auto">
+    <nav class="nav w-sm lg:w-lg mx-auto">
         <div class="navbar bg-base-100 px-0 py-8">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -93,11 +152,12 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="h1 cursor-pointer">Hockey<span class="text-orange">’</span>s</a>
+                <a class="text-2xl md:text-4xl font-extrabold cursor-pointer">Hockey<span
+                        class="text-orange">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 p font-normal">
-                    <li><a class="font-bold ">Home</a></li>
+                    <li><a class="font-bold text-[#131318]">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
@@ -112,7 +172,7 @@
     </nav>
 
     <!-- bannar section start -->
-    <section class="w-[80%] mx-auto">
+    <section class="section w-sm lg:w-lg mx-auto">
         <div class="carousel w-full h-[35vw]">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="./assets/Images/b1.jpg" class="w-full" />
@@ -134,6 +194,54 @@
                     <a href="#slide2" class="btn btn-circle">❮</a>
                     <a href="#slide4" class="btn btn-circle">❯</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hockeys club section start-->
+    <section class="section w-sm lg:w-lg mx-auto flex flex-col items-center margin-top gap-6 text-center">
+        <h1 class="h1 h1-lg">Professional Hockeys Club</h1>
+        <p class="p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+            sit
+            nullam proin.</p>
+        <div
+            class="progress-container w-full flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-start gap-8 lg:gap:0 text-center mt-7">
+            <div class="flex flex-col gap-5">
+                <div class="radial-progress text-error mx-auto" style="--value:87; --size:8rem;" role="progressbar">
+                    <span class="h2 h2-lg text-dark-1">87%</span>
+                </div>
+                <h4 class="h4 h4-lg">
+                    Prayer Facility
+                </h4>
+                <p class="p">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="radial-progress text-success mx-auto" style="--value:95; --size:8rem; --thickness: 12px;"
+                    role="progressbar">
+                    <span class="h2 h2-lg text-dark-1">95%</span>
+                </div>
+                <h4 class="h4 h4-lg">
+                    Experienced Coach
+                </h4>
+                <p class="p">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="radial-progress text-warning mx-auto" style="--value:90;  --size:8rem;" role="progressbar">
+                    <span class="h2 h2-lg text-dark-1">90%</span>
+                </div>
+                <h4 class="h4 h4-lg">
+                    Senior Player
+                </h4>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="radial-progress text-info mx-auto" style="--value:80; --size:8rem;" role="progressbar">
+                    <span class="h2 h2-lg text-dark-1">80%</span>
+                </div>
+                <h4 class="h4 h4-lg">
+                    Training Ground
+                </h4>
+                <p class="p">Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
         </div>
     </section>
